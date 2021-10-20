@@ -1,0 +1,12 @@
+.buttonsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: left;
+}
+
+@media (min-width: 550px) {
+	.buttonsContainer {
+		flex-direction: row;
+	}
+}

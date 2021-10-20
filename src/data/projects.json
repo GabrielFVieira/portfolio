@@ -1,0 +1,135 @@
+[
+	{
+		"id": 1,
+		"title": "Proffy Web",
+		"description": "Projeto iniciado durante as aulas do NLW2, ministrado pela Rocketseat. Consiste em uma aplicação para unir pessoas interessadas em aprender com pessoas que buscar dar aulas. A aplicação possui sistema de login, cadastro e busca de aulas, opção de entrar em contato com o professor via Whatsapp e sistema de recuperação de senha.",
+		"link": "https://nlw2-proffy-web-gvieira.herokuapp.com/",
+		"github": "https://github.com/GabrielFVieira/NLW2_web",
+		"techs": [
+			{
+				"name": "Typescript",
+				"logo": "typescript"
+			},
+			{
+				"name": "NodeJs",
+				"logo": "node.js"
+			},
+			{
+				"name": "React",
+				"logo": "react"
+			},
+			{
+				"name": "Express",
+				"logo": "express"
+			},
+			{
+				"name": "PostgresSQL",
+				"logo": "postgresql"
+			},
+			{
+				"name": "Heroku",
+				"logo": "heroku"
+			},
+			{
+				"name": "JWT",
+				"logo": "JSON web tokens"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "Proffy Mobile",
+		"description": "Versão mobile do Proffy.",
+		"github": "https://github.com/GabrielFVieira/NLW2_mobile",
+		"techs": [
+			{
+				"name": "Typescript",
+				"logo": "typescript"
+			},
+			{
+				"name": "NodeJs",
+				"logo": "node.js"
+			},
+			{
+				"name": "React Native",
+				"logo": "react"
+			},
+			{
+				"name": "PostgresSQL",
+				"logo": "postgresql"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "\"InterClone\"",
+		"description": "Uma aplicação simples de cadastro de conta corrente e lançamentos utilizando parte da palheta de cor do Inter. Feito utilizando uma aplicação web Java e páginas JSP. Trabalho realizado em dupla para a disciplina de Desenvolvimento Web, todas as páginas além da inicial foram feitas por mim.",
+		"github": "https://github.com/GabrielFVieira/InterClone",
+		"techs": [
+			{
+				"name": "Java",
+				"logo": "java"
+			},
+			{
+				"name": "Bootstrap",
+				"logo": "bootstrap"
+			},
+			{
+				"name": "JQuery",
+				"logo": "jquery"
+			},
+			{
+				"name": "MySQL",
+				"logo": "mysql"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"title": "Tindev",
+		"description": "Desenvolvido durante a semana Omnistack 8 da Rocketseat. Consiste em uma aplicação similar ao Tinder porém com o intuito de servir de ponte de contato para Devs",
+		"github": "https://github.com/GabrielFVieira/tindev_web",
+		"techs": [
+			{
+				"name": "Javascript",
+				"logo": "javascript"
+			},
+			{
+				"name": "NodeJs",
+				"logo": "node.js"
+			},
+			{
+				"name": "MongoDB",
+				"logo": "mongodb"
+			},
+			{
+				"name": "Express",
+				"logo": "express"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"title": "AirCnC",
+		"description": "Desenvolvido durante a semana Omnistack 9 da Rocketseat. Consiste em uma aplicação que visa conectar empresas que querem abrir spots e desenvolvedores que procuram um lugar para trocar ideias com devs, conhecer a empresa e trabalhar lá por um período.",
+		"github": "https://github.com/GabrielFVieira/aircnc_web",
+		"techs": [
+			{
+				"name": "Javascript",
+				"logo": "javascript"
+			},
+			{
+				"name": "NodeJs",
+				"logo": "node.js"
+			},
+			{
+				"name": "MongoDB",
+				"logo": "mongodb"
+			},
+			{
+				"name": "Express",
+				"logo": "express"
+			}
+		]
+	}
+]

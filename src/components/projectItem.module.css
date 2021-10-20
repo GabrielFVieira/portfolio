@@ -1,0 +1,69 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 3rem 1rem 3rem;
+}
+
+.container ~ .container {
+	border-top: var(--color-secondary) dashed 0.3rem;
+}
+
+.infoContainer {
+	width: calc(100% - 5rem);
+	height: 100%;
+	margin-right: 3rem;
+}
+
+.infoContainer h4,
+.infoContainer p {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.infoContainer h4 {
+	width: calc(100% - 5rem);
+	color: var(--color-text-primary);
+	font-size: 2.3rem;
+	margin-bottom: 0.5rem;
+	overflow-wrap: break-word;
+
+	-webkit-line-clamp: 2;
+}
+
+.infoContainer p {
+	width: 100%;
+	height: 100%;
+	color: var(--color-text-primary);
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+
+	-webkit-line-clamp: 3;
+}
+
+.badgeContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.badge {
+	padding-right: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+.buttonsContainer {
+	width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}

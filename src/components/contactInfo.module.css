@@ -1,0 +1,72 @@
+.container {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-direction: row;
+	padding: 1rem;
+
+	-webkit-transition: background-color 0.25s ease-out;
+	-moz-transition: background-color 0.25s ease-out;
+	-o-transition: background-color 0.25s ease-out;
+	transition: background-color 0.25s ease-out;
+}
+
+.container ~ .container {
+	border-top: var(--color-secondary) dashed 0.3rem;
+	border-left: none;
+	margin-top: 2rem;
+	padding-top: 3rem;
+	margin-left: 0;
+}
+
+.image {
+	height: 5rem;
+	filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(19deg) brightness(105%) contrast(101%);
+}
+
+.image:hover {
+	filter: invert(57%) sepia(82%) saturate(1218%) hue-rotate(99deg) brightness(96%) contrast(97%);
+}
+
+.nameContainer {
+	margin-left: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.title {
+	width: 100%;
+	color: var(--color-text-primary);
+	font-size: 2.5rem;
+	text-align: left;
+	text-decoration: none;
+}
+
+.title:hover {
+	color: var(--color-secondary);
+}
+
+.userName {
+	width: 100%;
+	color: var(--color-text-secondary);
+	font-size: 1.6rem;
+	text-align: left;
+}
+
+@media (min-width: 550px) {
+	.container {
+		width: fit-content;
+	}
+
+	.container ~ .container {
+		border-left: var(--color-secondary) dashed 0.3rem;
+		border-top: none;
+		margin-left: 4rem;
+		margin-top: 0;
+		padding-left: 5rem;
+	}
+}
