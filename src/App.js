@@ -9,15 +9,17 @@ import Page404 from './pages/Page404';
 import Projects from './pages/Projects';
 import Landing from './pages/Landing';
 import Curriculum from './pages/Curriculum';
+import Navbar from './components/Navbar';
 
 export default function App() {
 	return (
 		<div className="container">
 			<HelmetProvider>
 				<Helmet titleTemplate="Gabriel Figueiredo - %s" defaultTitle="Gabriel Figueiredo">
-					<meta name="theme-color" content="#8257E5" />
+					<meta name="theme-color" content="#1f3245" />
 				</Helmet>
 				<Router>
+					<Navbar />
 					<Switch>
 						<Route path="/" exact component={Landing} />
 						<Route path="/about" component={About} />

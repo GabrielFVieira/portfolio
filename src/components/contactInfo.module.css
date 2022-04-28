@@ -21,13 +21,18 @@
 	margin-left: 0;
 }
 
-.image {
+.icon {
 	height: 5rem;
-	filter: invert(99%) sepia(99%) saturate(2%) hue-rotate(19deg) brightness(105%) contrast(101%);
+	color: var(--color-text-primary);
 }
 
-.image:hover {
-	filter: invert(57%) sepia(82%) saturate(1218%) hue-rotate(99deg) brightness(96%) contrast(97%);
+.icon:hover {
+	color: var(--color-secondary);
+}
+
+.icon * {
+	width: 100%;
+	height: 100%;
 }
 
 .nameContainer {
@@ -67,6 +72,7 @@
 		border-top: none;
 		margin-left: 4rem;
 		margin-top: 0;
+		padding-top: 1rem;
 		padding-left: 5rem;
 	}
 }

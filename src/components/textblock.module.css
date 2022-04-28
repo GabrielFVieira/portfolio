@@ -52,10 +52,7 @@
 	color: var(--color-text-primary);
 	width: 100%;
 	text-align: left;
-	font-size: 1.5rem;
-}
-
-.image {
+	font-size: 2rem;
 }
 
 .reverse {

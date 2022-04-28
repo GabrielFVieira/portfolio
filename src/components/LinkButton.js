@@ -1,25 +1,15 @@
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
 
 import css from './linkButton.module.css';
+import Tooltip from './Tooltip';
 
-export default function LinkButton({ id, href, icon, iconName, style, tooltip, tooltipPos }) {
+export default function LinkButton({ id, href, icon, tooltip, tooltipPos }) {
 	return (
 		<div className={css.button}>
-			<a className={css.link} href={href} target="_blank" rel="noreferrer" data-tip data-for={id} style={style}>
-				<img src={icon} alt={iconName} />
+			<a className={css.link} href={href} target="_blank" rel="noreferrer" data-tip data-for={id}>
+				{icon}
 			</a>
-			<ReactTooltip
-				id={id}
-				place={tooltipPos ? tooltipPos : 'top'}
-				textColor="#fff"
-				backgroundColor="#294663"
-				border
-				borderColor="#04d361"
-				effect="solid"
-			>
-				{tooltip}
-			</ReactTooltip>
+			<Tooltip id={id} text={tooltip} pos={tooltipPos ? tooltipPos : 'right'} delay={500} />
 		</div>
 	);
 }

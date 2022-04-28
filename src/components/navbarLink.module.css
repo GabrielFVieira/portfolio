@@ -1,0 +1,69 @@
+.link,
+.button {
+	font: 500 1.8rem Poppins;
+	color: var(--color-text-primary);
+	text-decoration: none;
+}
+
+.link {
+	padding: 0.5rem 1.3rem;
+	width: fit-content;
+	position: relative;
+	display: inline-block;
+}
+
+.link:after {
+	position: absolute;
+	left: 50%;
+	content: '';
+	height: 0.2rem;
+	background: var(--color-secondary);
+	transition: all 0.25s linear;
+	width: 0;
+	bottom: -3px;
+}
+
+.link:hover:after {
+	width: 100%;
+	left: 0px;
+}
+
+.button {
+	width: fit-content;
+	height: 5rem;
+	border-radius: 0.4rem;
+	background-color: var(--color-primary);
+	border: 0.1rem var(--color-text-primary) solid;
+	padding: 1rem;
+
+	font: 500 1.8rem Poppins;
+	color: var(--color-text-primary);
+	text-decoration: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	-webkit-transition: background-color 0.25s ease-out;
+	-moz-transition: background-color 0.25s ease-out;
+	-o-transition: background-color 0.25s ease-out;
+	transition: background-color 0.25s ease-out;
+}
+
+.button:hover {
+	background-color: var(--color-primary-lighter);
+}
+
+.container ~ .container {
+	margin-top: 2rem;
+}
+
+@media (min-width: 550px) {
+	.container ~ .container {
+		margin-top: 0;
+	}
+
+	.button {
+		margin-left: 3rem;
+	}
+}

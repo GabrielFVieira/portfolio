@@ -2,7 +2,7 @@ import React from 'react';
 
 import css from './textblock.module.css';
 
-export default function TextBlock({ title, subtitle, text, from, to, image, imageAlt, imagePos }) {
+export default function TextBlock({ title, subtitle, text, from, to, imagePos }) {
 	function formatPeriod(from, to) {
 		if (from === to) {
 			return from;
@@ -23,7 +23,6 @@ export default function TextBlock({ title, subtitle, text, from, to, image, imag
 				<p className={css.period}>{formatPeriod(from, to)}</p>
 			</div>
 			<p className={css.text}>{text}</p>
-			{image && <img src={image} alt={imageAlt ? imageAlt : 'image'} />}
 		</div>
 	);
 }

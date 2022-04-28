@@ -1,9 +1,10 @@
 import React from 'react';
 
 import css from './projectItem.module.css';
-import githubIcon from '../assets/icons/github.svg';
-import externalLinkIcon from '../assets/icons/external-link.svg';
 import LinkButton from './LinkButton';
+
+import { BsGithub } from 'react-icons/bs';
+import { FiExternalLink } from 'react-icons/fi';
 
 function getBadgeURL(text, logo) {
 	return `https://img.shields.io/badge/-${text}-2c4c6b?style=flat&logo=${logo}`;
@@ -28,12 +29,12 @@ export default function ProjectItem({ project }) {
 					<LinkButton
 						id="link"
 						href={link}
-						icon={externalLinkIcon}
+						icon={<FiExternalLink />}
 						iconName="Project Page"
 						tooltip="Abrir página do projeto"
 					/>
 				)}
-				<LinkButton id="github" href={github} icon={githubIcon} iconName="GitHub" tooltip="Abrir projeto no GitHub" />
+				<LinkButton id="github" href={github} icon={<BsGithub />} tooltip="Abrir projeto no GitHub" />
 			</div>
 		</div>
 	);
