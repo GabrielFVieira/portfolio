@@ -1,17 +1,25 @@
 [
 	{
-		"id": "jmg",
-		"enterprise": "JMG Tecnologia",
-		"role": "Consultor e analista de sistema",
-		"description": "Programador do sistema de inventários para o cliente Ipiranga Lubrificantes (atual Iconic Lubrificantes), atuando na criação e implementação de algumas funções para o mesmo. Atendendo a chamados emergenciais em caso de problemas no ambiente do cliente em questão. Desenvolvimento utilizando o Microsoft SQL Server e o framework .NET, em conjunto também com o antigo Windows Mobile CE.",
-		"from": "Nov 2018",
-		"to": "Nov 2019"
+		"id": "sensedia",
+		"enterprise": "Sensedia",
+		"role": "Desenvolvedor backend Júnior",
+		"description": "Desenvolvedor júnior na área de Product Engineering. Atuo desenvolvendo em Golang, aplicando também conhecimentos de Kubernetes e Knative.",
+		"from": "Nov 2021"
 	},
 	{
 		"id": "finep",
 		"enterprise": "FINEP",
 		"role": "Estagiário do departamento de TI",
 		"description": "Estagiário do departamento de ATI, atuando na manutenção e desenvolvimento dos sistemas e processos internos da empresa. Trabalhando com um ambiente de desenvolvimento utilizando o Java 7 e 8, Hibernate, banco de dados Oracle, Camunda BPMN e o framework web ZK. Fazendo uso também de ferramentas como o Jira, Gitea e Camunda Modeler.",
-		"from": "Jan 2020"
+		"from": "Jan 2020",
+		"to": "Nov 2021"
+	},
+	{
+		"id": "jmg",
+		"enterprise": "JMG Tecnologia",
+		"role": "Consultor e analista de sistema",
+		"description": "Programador do sistema de inventários para o cliente Ipiranga Lubrificantes (atual Iconic Lubrificantes), atuando na criação e implementação de algumas funções para o mesmo. Atendendo a chamados emergenciais em caso de problemas no ambiente do cliente em questão. Desenvolvimento utilizando o Microsoft SQL Server e o framework .NET, em conjunto também com o antigo Windows Mobile CE.",
+		"from": "Nov 2018",
+		"to": "Nov 2019"
 	}
 ]

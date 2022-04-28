@@ -1,17 +1,17 @@
 [
 	{
+		"id": "uff",
+		"institute": "Universidade Federal Fluminense - UFF",
+		"course": "Bacharelado em Sistema de Informação",
+		"description": "Cursando atualmente o 6º período do curso, de um total de 8 períodos.",
+		"from": "2019"
+	},
+	{
 		"id": "nave",
 		"institute": "Colégio Estadual José Leite Lopes - NAVE/RJ",
 		"course": "Ensino médio com técnico em programação de jogos",
 		"description": "Realizado curso técnico integrado ao ensino médio com foco no desenvolvimento de jogos usando javascript e C#, além de programação para Arduíno e dispositivos móveis utilizando o Xamarin.",
 		"from": "2016",
 		"to": "2018"
-	},
-	{
-		"id": "uff",
-		"institute": "Universidade Federal Fluminense - UFF",
-		"course": "Bacharelado em Sistema de Informação",
-		"description": "Cursando atualmente o 6º período do curso, de um total de 8 períodos.",
-		"from": "2019"
 	}
 ]
