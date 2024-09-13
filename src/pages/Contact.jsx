@@ -16,23 +16,21 @@ export default function Contact() {
 	return (
 		<div className={pageCSS.pageContainer}>
 			<Helmet title={pageName} />
-			<div className={pageCSS.pageContent}>
-				<Title title={pageName} subtitle="Aqui estão algumas formas de entrar em contato comigo:" />
+			<Title title={pageName} subtitle="Aqui estão algumas formas de entrar em contato comigo:" />
 
-				<div className={css.buttonsContainer}>
-					<ContactInfo
-						title="LinkedIn"
-						userName="@GabrielFVieira"
-						icon={<BsLinkedin />}
-						url="https://www.linkedin.com/in/gabrielfvieira"
-					/>
-					<ContactInfo
-						title="Email"
-						userName="gabrielfigueiredov@gmail.com"
-						icon={<IoIosMail />}
-						url="mailto:gabrielfigueiredov@gmail.com"
-					/>
-				</div>
+			<div className={css.buttonsContainer}>
+				<ContactInfo
+					title="LinkedIn"
+					userName="@GabrielFVieira"
+					icon={<BsLinkedin />}
+					url="https://www.linkedin.com/in/gabrielfvieira"
+				/>
+				<ContactInfo
+					title="Email"
+					userName="gabrielfigueiredov@gmail.com"
+					icon={<IoIosMail />}
+					url="mailto:gabrielfigueiredov@gmail.com"
+				/>
 			</div>
 		</div>
 	);

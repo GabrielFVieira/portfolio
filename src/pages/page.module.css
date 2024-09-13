@@ -1,8 +1,11 @@
 .pageContainer {
-	width: 100%;
-	margin: 0 auto;
-	max-width: 100rem;
-	padding: 0 2rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 0 2rem 2rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    flex: 1; /* Takes up remaining space in .container */
 }
 
 @media (min-width: 550px) {

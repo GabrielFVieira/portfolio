@@ -3,8 +3,9 @@
 		"id": "uff",
 		"institute": "Universidade Federal Fluminense - UFF",
 		"course": "Bacharelado em Sistema de Informação",
-		"description": "Cursando atualmente o 6º período do curso, de um total de 8 períodos.",
-		"from": "2019"
+		"description": "Formado no curso de Sistemas de Informação da UFF Niterói, com um trabalho de conclusão de curso focado em testes de microsserviços, atingindo a nota máxima.",
+		"from": "2019",
+		"to": "2024"
 	},
 	{
 		"id": "nave",

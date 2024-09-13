@@ -2,9 +2,17 @@
 	{
 		"id": "sensedia",
 		"enterprise": "Sensedia",
+		"role": "Desenvolvedor backend Pleno",
+		"description": "Expandida atuação para o produto de analytics da empresa, atuando com tecnologias como OpenSearch, Logstash e OpenTelemetry. Recebido prêmio de Rockstar em agosto de 2024 devido às contribuições para melhoria da solução de analytics.",
+		"from": "Mai 2023"
+	},
+	{
+		"id": "sensedia",
+		"enterprise": "Sensedia",
 		"role": "Desenvolvedor backend Júnior",
 		"description": "Desenvolvedor júnior na área de Product Engineering. Atuo desenvolvendo em Golang, aplicando também conhecimentos de Kubernetes e Knative.",
-		"from": "Nov 2021"
+		"from": "Nov 2021",
+		"to": "Mai 2023"
 	},
 	{
 		"id": "finep",

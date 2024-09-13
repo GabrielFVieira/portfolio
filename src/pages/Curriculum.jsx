@@ -1,31 +1,41 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Worker, Viewer } from '@react-pdf-viewer/core';
+import { Worker, Viewer, SpecialZoomLevel } from '@react-pdf-viewer/core';
 import { getFilePlugin } from '@react-pdf-viewer/get-file';
+import { fullScreenPlugin } from '@react-pdf-viewer/full-screen';
 
 import pageCSS from './page.module.css';
+import css from './curriculum.module.css';
 import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/full-screen/lib/styles/index.css';
 
 export default function Curriculum() {
-	const getFilePluginInstance = getFilePlugin();
+	const getFilePluginInstance = getFilePlugin({
+		fileNameGenerator: (file) => {
+			const fileName = file.name.substring(file.name.lastIndexOf('/') + 1);
+			return `gabriel-figueiredo-vieira-${fileName}`;
+		},
+	});
 	const { Download } = getFilePluginInstance;
+	const fullScreenPluginInstance = fullScreenPlugin();
+	const { EnterFullScreenButton } = fullScreenPluginInstance;
 
 	return (
 		<div className={pageCSS.pageContainer}>
 			<Helmet title="Currículo" />
-			{/* <Download>
-			{
-				(props) => (
-					<button onClick={props.onClick}>Download</button>
-				)
-			}
-			</Download> */}
-			<Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
-				<Viewer plugins={[getFilePluginInstance]} fileUrl='/portfolio/curriculum.pdf' />
-				{/* <div className={pageCSS.pageContent}>
-					<img className={css.curriculum} src={curriculum} alt="Curriculum" />
-				</div> */}
-			</Worker>
+
+			<div>
+				<div className={css.pdfbuttons}>
+					<EnterFullScreenButton />
+					<Download />
+				</div>
+
+				<div className={css.curriculum}>
+					<Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js">
+						<Viewer plugins={[getFilePluginInstance, fullScreenPluginInstance]} fileUrl='/portfolio/curriculum.pdf' defaultScale={SpecialZoomLevel.PageWidth} />
+					</Worker>
+				</div>
+			</div>
 		</div>
 	);
 }
