@@ -18,7 +18,14 @@ export default function Curriculum() {
 		},
 	});
 	const { Download } = getFilePluginInstance;
-	const fullScreenPluginInstance = fullScreenPlugin();
+	const fullScreenPluginInstance = fullScreenPlugin({
+		onEnterFullScreen: (zoom) => {
+			zoom(SpecialZoomLevel.PageFit);
+		},
+		onExitFullScreen: (zoom) => {
+			zoom(SpecialZoomLevel.PageWidth);
+		},
+	});
 	const { EnterFullScreenButton } = fullScreenPluginInstance;
 
 	return (
