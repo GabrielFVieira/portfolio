@@ -1,0 +1,4 @@
+/* Workaround added because of this open issue: https://github.com/react-pdf-viewer/react-pdf-viewer/issues/1559 */
+.rpv-full-screen__overlay {
+    display: none;
+}

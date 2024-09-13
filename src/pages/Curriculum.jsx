@@ -8,6 +8,7 @@ import pageCSS from './page.module.css';
 import css from './curriculum.module.css';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/full-screen/lib/styles/index.css';
+import './fix_pdf_zoom.css';
 
 export default function Curriculum() {
 	const getFilePluginInstance = getFilePlugin({
