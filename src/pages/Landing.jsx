@@ -10,7 +10,7 @@ export default function Landing() {
 			<div className={css.container}>
 				<h3 className={css.greeting}>Olá, me chamo</h3>
 				<h1 className={css.name}>Gabriel Figueiredo</h1>
-				<p className={css.resume}>Sou um desenvolvedor backend, atualmente trabalhando como dev júnior na Sensedia.</p>
+				<p className={css.resume}>Sou um desenvolvedor backend, atualmente trabalhando como dev pleno na Sensedia.</p>
 				<Link className={css.button} to="/projects">
 					Veja alguns dos meus projetos
 				</Link>

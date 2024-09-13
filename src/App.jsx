@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import './assets/styles/global.css';
@@ -20,14 +20,14 @@ export default function App() {
 				</Helmet>
 				<Router>
 					<Navbar />
-					<Switch>
-						<Route path="/" exact component={Landing} />
-						<Route path="/about" component={About} />
-						<Route path="/contact" component={Contact} />
-						<Route path="/projects" component={Projects} />
-						<Route path="/curriculum" component={Curriculum} />
-						<Route component={Page404} />
-					</Switch>
+					<Routes>
+						<Route path='/' element={<Landing/>} />
+						<Route path='/about' element={<About/>} />
+						<Route path='/contact' element={<Contact/>} />
+						<Route path='/projects' element={<Projects/>} />
+						<Route path='/curriculum' element={<Curriculum/>} />
+						<Route element={<Page404/>} />
+					</Routes>
 				</Router>
 			</HelmetProvider>
 		</div>
